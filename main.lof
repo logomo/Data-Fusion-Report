@@ -1,0 +1,56 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Different count of LiDAR hits on objects with same size but different distance from vehicle\relax }}{10}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overshadowed map obstacle by detected obstacles\relax }}{11}{figure.caption.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Intruder vehicle collision probability along assumed trajectory with uncertain spread.\relax }}{12}{figure.caption.6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Trajectories leading to same destination with different safety ratings.\relax }}{13}{figure.caption.7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Six spaces of interest \cite {yapo2008probabilistic}\relax }}{23}{figure.caption.8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Planar surface calculation notation and plot\relax }}{26}{figure.caption.9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Trajectories for chaotic reach set approximation method\relax }}{37}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Trajectories for harmonic reach set approximation method\relax }}{38}{figure.caption.13}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Trajectories for combined reach set approximation method\relax }}{39}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces One probable position $[d_d,d_\theta ,d_\varphi ]$ (green). deviated from linear trajectory (blue line) at point $\mathaccentV {vec}17E{x}(10)$.(blue) with initial position $x_s$ (red)\relax }}{43}{figure.caption.22}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Probability of intruder $i_k$ position in ellipsoid $E(\mathaccentV {vec}17E{x}(t),\mathaccentV {vec}17E{v})$\relax }}{44}{figure.caption.23}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Avoidance grid $\EuScript {A}(t_i)$ (blue) intersection with elliptic cone intruder $i_k(\mathaccentV {vec}17E{x},\mathaccentV {vec}17E{v},\theta ,\varphi )$ (red) example.\relax }}{45}{figure.caption.24}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Time Of Arrival (TOA) for one ellipsoid $E_D(\mathaccentV {vec}17E{x}(\tau ),\mathaccentV {vec}17E{v})$\relax }}{46}{figure.caption.25}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Visibility probability for cell row - free space\relax }}{51}{figure.caption.30}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Visibility probability for cell row - first obstacle\relax }}{52}{figure.caption.31}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Visibility probability for cell row - second obstacle\relax }}{52}{figure.caption.32}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Visibility probability for cell row - third obstacle\relax }}{53}{figure.caption.33}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Map obstacle - undetected by sensory system\relax }}{53}{figure.caption.34}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Map obstacle - detected by sensory system\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Map obstacle - hidden behind detected obstacle\relax }}{54}{figure.caption.36}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Example of partial movement buffers chaining.\relax }}{57}{figure.caption.39}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Obstacle space for static line intersection\relax }}{59}{figure.caption.42}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Reach set approximation for static line intersection - middle layer\relax }}{59}{figure.caption.43}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Obstacle space for timed line intersection\relax }}{60}{figure.caption.44}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Reach set approximation for timed line intersection - middle layer\relax }}{60}{figure.caption.45}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Obstacle space for timed line intersection with future movement\relax }}{61}{figure.caption.46}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Reach set approximation for timed line intersection with future movement - middle layer\relax }}{61}{figure.caption.47}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Obstacle space for timed intruder body volume\relax }}{62}{figure.caption.48}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Reach set approximation for timed vehicle body volume - all layers\relax }}{63}{figure.caption.49}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Obstacle space for static uncertainty spread\relax }}{64}{figure.caption.50}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Reach set approximation for static uncertainty spread - all layers\relax }}{64}{figure.caption.51}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Obstacle space for static uncertainty spread\relax }}{65}{figure.caption.52}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Reach set approximation for static uncertainty spread - all layers\relax }}{65}{figure.caption.53}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces First obstacle set $\EuScript {B}_\EuScript {O}(1)$ avoidance\relax }}{68}{figure.caption.54}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Second obstacle set $\EuScript {B}_\EuScript {O}(2)$ avoidance\relax }}{68}{figure.caption.55}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Third obstacle set $\EuScript {B}_\EuScript {O}(3)$ avoidance\relax }}{69}{figure.caption.56}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Vehicle trajectory after mission competition\relax }}{70}{figure.caption.57}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Reachability probability assessment for $\EuScript {B}_\EuScript {O}(1)$ avoidance\relax }}{71}{figure.caption.58}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Obstacle probability assessment for $\EuScript {B}_\EuScript {O}(1)$ avoidance\relax }}{72}{figure.caption.59}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Visibility probability assessment for $\EuScript {B}_\EuScript {O}(1)$ avoidance\relax }}{73}{figure.caption.60}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Crash distance $c_r$ evolution during mission\relax }}{74}{figure.caption.61}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Trajectory tracking performance\relax }}{75}{figure.caption.62}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces First intruder detection.\relax }}{78}{figure.caption.64}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces After all intruders avoidance\relax }}{79}{figure.caption.65}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Obstacle probability after first intruder detection\relax }}{80}{figure.caption.66}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Reachibility probability after first intruder detection\relax }}{81}{figure.caption.67}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Visibility probability after first intruder detection\relax }}{82}{figure.caption.68}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Intruder collision distance $c_d(t)$ evolution.\relax }}{83}{figure.caption.69}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Decision frame $\EuScript {D}(0)$.\relax }}{85}{figure.caption.74}

@@ -1,0 +1,36 @@
+\chapter{Introduction to data fusion}\label{ch:01Concept}
+\noindent Need for abstract representation of \emph{operative space} independent of used sensed technology arisen from commercial side of UAV users. The universal obstacle avoidance system should have \emph{portability property}. Our previous work \emph{Obstacle avoidance framework based on reach sets} have introduced important concept of obstacle avoidance framework with control interface. \emph{Control interface}  has been implemented as \emph{movement automaton} $\mathscr{MA}$, which gave us control interface portability. The original concept was using simple tresholding to cell status interpretation, which was hardwired to LiDAR technology.  The new demand is to incorporate concepts of \emph{visibility}, \emph{intruder} and \emph{multiple obstacle sources} into obstacle avoidance concept. The probabilistic approach, when the state of cells in avoidance is changed into set of ratings is introduced into this work. The key features introduced in this work are:
+\begin{enumerate}
+    \item\emph{Data fusion interface} - interface to fuse sense data from various online, offline, cooperative, non-cooperative sources.
+    \item\emph{Intruder concept} - concept of moving obstacle and its uncertainty spread mapping into avoidance grid.
+\end{enumerate}
+
+\section{Related work}
+\noindent Avionics sensor fusion has been proposed by Ramsay in \cite{ramasamy2014avionics}. Next generation avoidance concept \cite{ramasamy2014next} is introducing concept of higher level sensor fusion called \emph{data fusion}. The uncertainty of remotely piloted systems have been discussed in \cite{chynchenko2016remotely}. The work provided concept of various performance ratings like visibility and obstacle rating, more details have been given in \cite{shmelova2016modeling}. This ratings were modeled only for operator decision making \cite{kharchenko2017modelling}, results are usable for automated decision making and space assessment. \emph{Probabilistic trajectory assessment} has been firstly proposed in \cite{kim2007uav} where trajectory was tracking \emph{safety measurements} along. Probabilistic approach from view of game theory was firstly used in \cite{vidal2002probabilistic}. Probabilistic path planning using safety zones similar to cell classification of this work have been used in \cite{pfeiffer2005path}. Probabilistic path search similar to our reach set representation using rapidly exploring path trees have been used in \cite{kothari2013probabilistically,blackmore2006probabilistic}. Relationship between clasic grid search and probabilistic lattice search have been established in \cite{lavalle2004relationship}. A progabilistic approach for trajectory estimation via reduced lattice search is known from 1986 from work of Gessel \cite{gessel1986probabilistic} lattice paths were enumerated via movement sequences and similar technique is used in our reach set estimation method using movement automaton. Overall concepts of probabilistic sets have been given by Hirota in \cite{hirota1981concepts}. Free fkught safety rating similar to our reachability concept have been presented in \cite{hoekstra2002designing}.
+
+
+\section{Goals}
+\noindent Main goal is to develop a conceptual approach data fusion and create interface to sensor system, so given obstacle avoidance approach given by our previous work can be both \emph{platform and sensor system} independent. The independence should be solved via interface feed where sensor reading will be represented as \emph{space portion and trajectory point} probabilities. To achieve this goal following sub-goals must be achieved:
+\begin{enumerate}
+    \item \textit{Define universal interface for vehicle sensors} - identify probabilities bounded to trajectory $\mathscr{T}(x_0,B)$ or visibility grid cell $c_{i,j,k}\in\mathscr{A}(t_i)$ and define their meaning independent on sensor equipment on vehicle.
+    \item \textit{Derive probabilistic model for avoidance grid} - for identified probabilities define abstract calculation mechanism to derive final values for given bounded to trajectory $\mathscr{T}(x_0,B)$ or visibility grid cell $c_{i,j,k}\in\mathscr{A}(t_i)$.
+    \item \textit{Propose data fusion procedure for ADS-B and LiDAR with obstacle MAP} - define data fusion procedure for identified probabilities as extension of abstract model.
+    \item \textit{Compare probabilistic and deterministic model performance} - compare probabilistic and deterministic approach performance in common area of \textit{static obstacle avoidance}. Choose demonstrative example of mission with static obstacles and compare \textit{Crash distance} function performance.
+\end{enumerate}
+
+\section{Assumptions}
+\noindent The precision of \emph{obstacle map} must be sufficient for intersections with avoidance grid cells. Intersection with grid cells is mandatory for map obstacle inclusion into space assessment algorithm. This condition is summarized in assumption \ref{ass:1}.
+\begin{assumption}\label{ass:1}\textit{Obstacle map} is given with sufficient precision\end{assumption}
+
+\noindent \emph{Data fusion} is main concern of this work. \emph{Sensor fusion} approach how to filter and estimate various positional parameters of intruders or static obstacles have been summarized in book by \emph{Frederik Gustafsson}: \emph{Statistical Sensor Fusion} \cite{gustafsson2010statistical}. The assumption that readings from sensory system are pre-processed up to best possible quality is summarized in assumption \ref{ass:2}.
+\begin{assumption}\label{ass:2}\textit{Sensory readings} are filtered and processed via sensor fusion\end{assumption}
+
+\noindent The moving intruders are new addition to the \emph{avoidance grid} concept, therefore it is necessary to start with the simplest conditions possible. The standard intruder model is given by position and velocity vector at detection time. For this case there will be no position nor velocity vector update and the intruder will have tolerated conic deviation with horizontal and vertical parameters. This assumptions about moving intruders is summarized in assumption \ref{ass:3}. 
+
+\begin{assumption}\label{ass:3}\textit{Moving intruders} velocity and position vector are
+given with known noise and are static during intruder life time, the maximal horizontal and vertical deviation from trajectory is given.\end{assumption}
+
+\noindent When intruder is detected with given position, velocity and spread, there is at least one avoidance trajectory to avoid intruder. This is given by assumption \ref{ass:4}.
+\begin{assumption}\label{ass:4}\textit{Moving intruders} are avoidable with existing vehicle maneuverability \end{assumption}
+
+\noindent The given assumptions \ref{ass:1}-\ref{ass:4} are still far away from non segregated airspace, but more relaxed than assumptions for \emph{deterministic approach}. 
